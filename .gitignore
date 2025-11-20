@@ -10,6 +10,7 @@ __pycache__/
 output.xml
 log.html
 report.html
+output/screenshots/
 
 # OS files
 .DS_Store

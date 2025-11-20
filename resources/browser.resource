@@ -1,5 +1,5 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library    SeleniumLibrary   screenshot_root_directory=output/screenshots
 
 *** Keywords ***
 Open Browser To URL
