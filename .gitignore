@@ -1,0 +1,17 @@
+# Python
+*.pyc
+__pycache__/
+.venv/
+
+# PyCharm
+.idea/
+
+# Robot Framework outputs
+output.xml
+log.html
+report.html
+
+# OS files
+.DS_Store
+Thumbs.db
+output/screenshots
