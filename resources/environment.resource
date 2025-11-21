@@ -1,5 +1,8 @@
+*** Settings ***
+Resource    ../variables/dev.robot
+
 *** Keywords ***
 Load Environment
-    [Arguments]    ${env}
-    ${path}=    Set Variable    ../variables/${env}.yaml
-    Import Variables    ${path}
+    [Arguments]    ${env}=dev
+    Log    Loaded environment: ${env}
+
