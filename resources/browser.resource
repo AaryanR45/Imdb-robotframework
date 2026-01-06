@@ -1,5 +1,5 @@
 *** Settings ***
-Library    SeleniumLibrary   screenshot_root_directory=output/screenshots
+Library    SeleniumLibrary
 
 *** Keywords ***
 Open Browser To URL
@@ -7,5 +7,5 @@ Open Browser To URL
     Open Browser    ${url}    ${browser}
     Maximize Browser Window
 
-Close Browser
+Close ABrowser
     Close Browser
