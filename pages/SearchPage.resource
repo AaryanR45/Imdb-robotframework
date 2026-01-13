@@ -5,7 +5,7 @@ Resource    ../resources/common.resource
 *** Keywords ***
 Enter Search Query
     [Arguments]    ${movie}
-    Wait Until Element Is Visible    xpath=/html/body/div[2]/main    30s
+    Wait Until Element Is Visible    xpath=//*[@id="__next"]/main/div    30s
     Wait Until Element Is Visible    xpath=//input[@id='suggestion-search']    20s
     Input Text    xpath=//input[@id='suggestion-search']    ${movie}
 
