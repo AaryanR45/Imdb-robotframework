@@ -33,7 +33,7 @@ jobs:
         env:
           CI: true
         run: |
-          robot -d reports tests/
+           robot -d output -v env:dev tests/
 
       - name: Upload Robot Reports
         if: always()
