@@ -29,6 +29,9 @@ jobs:
           sudo apt update
           sudo apt install -y google-chrome-stable
 
+      - name: Prepare output folder
+        run: mkdir -p output
+
       - name: Run Robot Framework Tests
         env:
           CI: true
@@ -40,4 +43,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: robot-framework-reports
-          path: reports/
+          path: output/
