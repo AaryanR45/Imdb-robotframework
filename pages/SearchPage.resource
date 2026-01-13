@@ -1,15 +1,13 @@
 *** Settings ***
 Resource    ../resources/common.resource
 
-*** Variables ***
-${SEARCH_FIELD}    xpath=//input[@id='suggestion-search']
 
 *** Keywords ***
 Enter Search Query
     [Arguments]    ${movie}
-    Wait Until Element Is Visible    ${SEARCH_FIELD}    30s    1s
-    Wait Until Element Is Enabled    ${SEARCH_FIELD}    5s
-    Input Text    ${SEARCH_FIELD}    ${movie}
+    Wait Until Element Is Visible    xpath=//*[@id="__next"]/main    30s
+    Wait Until Element Is Visible    xpath=//input[@id='suggestion-search']    20s
+    Input Text    xpath=//input[@id='suggestion-search']    ${movie}
 
 Submit Search
-    Press Keys    ${SEARCH_FIELD}    ENTER
+    Press Keys    xpath=//input[@id='suggestion-search']    ENTER

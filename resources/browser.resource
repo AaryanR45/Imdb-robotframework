@@ -11,6 +11,7 @@ Open Browser To URL
     ...    ELSE
     ...    Open Browser    ${url}    chrome
     Set Window Size    1920    1080
+    Set Selenium Implicit Wait    10s
 
 Close ABrowser
     Close Browser
