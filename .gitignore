@@ -7,10 +7,7 @@ __pycache__/
 .idea/
 
 # Robot Framework outputs
-output.xml
-log.html
-report.html
-output/screenshots/
+output
 
 # OS files
 .DS_Store
